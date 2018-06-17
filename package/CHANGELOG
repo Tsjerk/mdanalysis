@@ -31,6 +31,10 @@ Enhancements
   * Added boolean property *Group.isunique (PR #1922)
   * Added *Group.copy() methods returning an identical copy of the respective
     group (PR #1922)
+  * Added calc_distance, calc_angle and calc_dihedral to lib.distances
+    (Issue #1262 #1938)
+  * Added pbc kwarg to Bond/Angle/Dihedral/Improper object value method,
+    default True. (Issue #1938)
 
 Fixes
   * rewind in the SingleFrameReader now reads the frame from the file (Issue #1929)
@@ -47,8 +51,6 @@ Fixes
   * PDBWriter now properly sets start value
 
 Changes
-  * Added calc_distance, calc_angle and calc_dihedral to lib.distances
-    (Issue #1262 #1938)
   * TopologyAttrs are now statically typed (Issue #1876)
   * updated meta data for new PyPi (#1837)
   * AtomGroup.atoms, ResidueGroup.residues, and SegmentGroup.segments now return
