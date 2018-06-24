@@ -406,7 +406,7 @@ def transform_RtoS(inputcoords, box, backend="serial"):
         The dimensions must be provided in the same format as returned
         by :attr:`MDAnalysis.coordinates.base.Timestep.dimensions`: ``[lx,
         ly, lz, alpha, beta, gamma]``.
-    backend
+    backend : str, optional
         Select the type of acceleration; "serial" is always available. Other
         possibilities are "OpenMP" (OpenMP).
 
@@ -414,6 +414,7 @@ def transform_RtoS(inputcoords, box, backend="serial"):
     -------
     outcoords : array
         A n x 3 array of fractional coordiantes.
+
 
     .. versionchanged:: 0.13.0
        Added *backend* keyword.
@@ -465,14 +466,14 @@ def transform_StoR(inputcoords, box, backend="serial"):
         The dimensions must be provided in the same format as returned
         by :attr:`MDAnalysis.coordinates.base.Timestep.dimensions`: ``[lx,
         ly, lz, alpha, beta, gamma]``.
-    backend
+    backend : str, optional
         Select the type of acceleration; "serial" is always available. Other
         possibilities are "OpenMP" (OpenMP).
 
     Returns
     -------
     outcoords : array
-        A n x 3 array of fracional coordiantes.
+        A n x 3 array of fractional coordiantes.
 
 
     .. versionchanged:: 0.13.0
