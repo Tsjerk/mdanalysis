@@ -858,9 +858,9 @@ def calc_distance(a, b, box=None):
     Parameters
     ----------
     a, b : numpy.ndarray
-      single coordinate vectors
+        single coordinate vectors
     box : numpy.ndarray, optional
-      simulation box, if given periodic boundary conditions will be applied
+        simulation box, if given periodic boundary conditions will be applied
 
     .. versionadded:: 0.18.1
     """
@@ -873,9 +873,10 @@ def calc_angle(a, b, c, box=None):
     Parameters
     ----------
     a, b, c : numpy.ndarray
-      single coordinate vectors
-    box : numpy.ndarray, optional
-      simulation box, if given periodic boundary conditions will be applied
+        single coordinate vectors
+    box : numpy.ndarray
+        simulation box if given periodic boundary conditions will be applied to
+        the vectors between atoms
 
     .. versionadded:: 0.18.1
     """
@@ -888,9 +889,9 @@ def calc_dihedral(a, b, c, d, box=None):
     Parameters
     ----------
     a, b, c, d : numpy.ndarray
-      single coordinate vectors
+        single coordinate vectors
     box : numpy.ndarray, optional
-      simulation box, if given periodic boundary conditions will be applied
+        simulation box, if given periodic boundary conditions will be applied
 
     .. versionadded:: 0.18.1
     """
